@@ -1,1 +1,0 @@
-Python -u "c:\users\m Tejas\my_projct\learning_path\learn Python\hacker Rank.py\capitalize!.py"
