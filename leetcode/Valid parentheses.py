@@ -12,7 +12,7 @@ class Solution:
                 if not dabba or dabba.pop() !=  brackets[letter]:
                     
                     return False
-        return True
+        return not dabba # len(dabba) == 0
 
 sr = '([{}])'
 slon = Solution()
