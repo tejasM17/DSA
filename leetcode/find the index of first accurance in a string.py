@@ -8,3 +8,5 @@ class Solution:
 
 utra = Solution()
 print(utra.firstOccurance(s1="sadbutsad", s2="sad"))
+
+#return s1.find(s2)
