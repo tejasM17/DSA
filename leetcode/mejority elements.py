@@ -1,8 +1,13 @@
 class Solution:
-    def majorityelement(self, nums):
-        n = len(nums)
-        maxnum = 0
+    def majorityElement(self, nums):
+        candidate = nums[0]
+        score = 1
+        for num in nums[1:]:
+            if score == 0:
+                candidate = num
+            score += 1 if num == candidate else -1
+        return candidate
 
-        for i in range(n):
-            if nums[i] > nums[i - 1]:
-                maxnum = nums[i]
+
+sol = Solution()
+print(sol.majorityElement([1, 2, 3, 4]))
