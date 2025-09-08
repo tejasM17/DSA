@@ -1,5 +1,5 @@
 class Solution:
-    def minOperations(self, queries: List[List[int]]) -> int:
+    def minOperations(self, queries):
         def get_ops(n: int) -> int:
             res, ops, power_of_4 = 0, 0, 1
             while power_of_4 <= n:
