@@ -1,17 +1,15 @@
-
-nums = [2,7,11,15]
+nums = [2, 7, 11, 15]
 target = 9
 
 
-
 def twoSum(nums, target):
-        cartetion = {}
+    cartetion = {}
 
-        for i,num in enumerate(nums):
-            if target - num in cartetion:
-                return[cartetion[target - num],i]
-            cartetion[num] = i
+    for i, num in enumerate(nums):
+        if target - num in cartetion:
+            return [cartetion[target - num], i]
+        cartetion[num] = i
+    return []
 
-        return []
-    
-print(twoSum(nums,target))
+
+print(twoSum(nums, target))

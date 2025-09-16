@@ -1,17 +1,18 @@
-bl = set("ad")
-print(bl)
+stack = []
 
-tx = "leet code"
-print(tx.split(" "))
-tx.split(" ")
+num = "1234"
+print(f"before : {stack}")
 
-count = 0
 
-for w in tx:
-    print(w)
-    for char in w:
-        if char in bl:
-            print(True)
-            count += 1
+for a in num:
+    stack.append(a)
 
-print(count)
+print(f"after : {stack}")
+
+a = 8
+b = 3
+
+a, b = b, a % b
+print(a)
+lcm = (a * b) // (a, b)
+print(lcm)
