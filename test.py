@@ -1,18 +1,21 @@
-stack = []
-
-num = "1234"
-print(f"before : {stack}")
+freq = [0] * 10
+print(freq)
 
 
-for a in num:
-    stack.append(a)
+nums = [1, 2, 2, 3, 1, 4]
+mx = 0
+res = 0
+for n in nums:
+    print(f'n = {n}"')
+    freq[n] += 1  # increse count at their index
+    f = freq[n]
+    print(f"freq = {freq}")
 
-print(f"after : {stack}")
+    if f > mx:
+        mx += 1
+        res += 1
+        print(f"f = {f}, mx = {mx}, res = {res}")
+    elif f == mx:
+        res += f
 
-a = 8
-b = 3
-
-a, b = b, a % b
-print(a)
-lcm = (a * b) // (a, b)
-print(lcm)
+print(f"res = {res}")
