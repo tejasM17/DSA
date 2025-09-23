@@ -1,21 +1,5 @@
-freq = [0] * 10
-print(freq)
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
 
-
-nums = [1, 2, 2, 3, 1, 4]
-mx = 0
-res = 0
-for n in nums:
-    print(f'n = {n}"')
-    freq[n] += 1  # increse count at their index
-    f = freq[n]
-    print(f"freq = {freq}")
-
-    if f > mx:
-        mx += 1
-        res += 1
-        print(f"f = {f}, mx = {mx}, res = {res}")
-    elif f == mx:
-        res += f
-
-print(f"res = {res}")
+result = a ^ b  # Binary: 0110 (Decimal: 6)
+print(result)  # Output: 6
