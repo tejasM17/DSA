@@ -1,5 +1,6 @@
-a = 5  # Binary: 0101
-b = 3  # Binary: 0011
-
-result = a ^ b  # Binary: 0110 (Decimal: 6)
-print(result)  # Output: 6
+r1 = 2 / 4
+print(r1)
+print(type(r1))
+r1 = str(r1)
+print(r1)
+print(type(r1))
