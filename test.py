@@ -1,5 +1,19 @@
-ls = [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        result = ""
+        i = 0
 
-for a in range(len(ls)):
-    if sum(ls[a]) == 0:
-        print(f"True : {a + 1}")
+        for letter in t:
+            if letter in t and s[i] == letter:
+                result += letter
+                i += 1
+                print(f"letter={letter}, t={t}, i={i}, result={result}")
+
+        return result == s
+
+
+string = "ahbgdc"
+s = "abc"
+
+soln = Solution()
+print(soln.isSubsequence(s, string))
