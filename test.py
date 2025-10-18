@@ -1,15 +1,15 @@
-class Solution:
-    def isHappy(self, n: int) -> bool:
-        print(f"input={n}")
-        nodiagide = set()
+s = "  hello world  "
 
-        while n != 1 and n not in nodiagide:
-            nodiagide.add(n)
-            print(f"set alli ideya={nodiagide}")
-            n = sum(int(num) ** 2 for num in str(n))
-        return True
+a = s.split()
+rev = a[::-1]
+
+print(a)
+print(rev)
+
+res = ""
+for word in range(len(rev)):
+    res += rev[word]
+    res += " "
 
 
-n = 19
-sol = Solution()
-print(sol.isHappy(n))
+print(res)
